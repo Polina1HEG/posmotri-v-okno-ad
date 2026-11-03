@@ -22,7 +22,6 @@ html {
   min-block-size: 100vh;
 }
 
-/* Убираем стандартные отступы у элементов */
 h1,
 h2,
 h3,
@@ -42,7 +41,6 @@ ol {
   list-style: none;
 }
 
-/* 2. Основное расположение блоков */
 .content {
   display: flex;
   align-items: flex-end;
@@ -51,13 +49,11 @@ ol {
   max-width: 1140px;
 }
 
-/* Левая часть страницы */
 .result {
   flex: 1;
   min-width: 0;
 }
 
-/* Правая часть страницы */
 .content__details {
   display: flex;
   flex-direction: column;
@@ -67,7 +63,6 @@ ol {
   height: 534px;
 }
 
-/* 3. Большое видео */
 .result__video-container {
   position: relative;
   width: 100%;
@@ -82,7 +77,6 @@ ol {
   block-size: 100%;
 }
 
-/* 4. Форма поиска */
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -101,7 +95,6 @@ ol {
   font-size: 18px;
 }
 
-/* 5. Поле ввода города */
 .search-form__textfield {
   display: block;
   border: none;
@@ -122,7 +115,6 @@ ol {
   color: rgb(255 255 255 / 0.7);
 }
 
-/* 6. Чекбоксы */
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -158,7 +150,6 @@ ol {
   opacity: 1;
 }
 
-/* 7. Скрытые элементы */
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -169,7 +160,6 @@ ol {
   white-space: nowrap;
 }
 
-/* 8. Кнопки */
 .button {
   display: block;
   border: 1px solid #fff;
@@ -193,7 +183,6 @@ ol {
   min-block-size: 34px;
 }
 
-/* 9. Заголовок справа */
 .title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -206,7 +195,6 @@ ol {
   color: #545050;
 }
 
-/* 10. Список карточек */
 .content__list-container {
   height: 296px;
   overflow-y: auto;
@@ -218,7 +206,6 @@ ol {
   gap: 30px;
 }
 
-/* 11. Отдельная карточка */
 .content__list-item {
   padding-inline: 3px;
 }
@@ -235,7 +222,6 @@ ol {
   inline-size: 100%;
 }
 
-/* Текст внутри карточки */
 .content__video-card-description-container {
   flex-grow: 1;
   min-inline-size: 0;
@@ -261,7 +247,6 @@ ol {
   -webkit-box-orient: vertical;
 }
 
-/* Картинка в карточке */
 .content__video-card-thumbnail {
   flex-shrink: 0;
   object-fit: cover;
@@ -270,33 +255,27 @@ ol {
   block-size: 103px;
 }
 
-/* 12. Выбранная карточка */
 .content__card-link_current {
   background-color: #545050;
 }
 
-/* 13. Состояния кнопок и карточек */
-/* При наведении появляется подчёркивание */
 .button:hover,
 .search-form__label:hover .search-form__label-text,
 .content__card-link:hover {
   text-decoration: underline;
 }
 
-/* При нажатии меняется фон */
 .button:active,
 .content__card-link:active {
   background-color: #545050;
 }
 
-/* Убираем стандартную обводку при фокусе */
 .button:focus,
 .search-form__textfield:focus,
 .content__card-link:focus {
   outline: none;
 }
 
-/* Обводка при навигации с клавиатуры */
 .button:focus-visible,
 .search-form__textfield:focus-visible,
 .content__card-link:focus-visible {
@@ -304,7 +283,6 @@ ol {
   outline-offset: 2px;
 }
 
-/* 14. Состояния формы при фокусе */
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
@@ -314,13 +292,11 @@ ol {
   text-decoration: none;
 }
 
-/* 15. Прелоадеры */
 .result__video-container,
 .content__list-container {
   position: relative;
 }
 
-/* 16. Полоса прокрутки */
 .custom-scrollbar::-webkit-scrollbar {
   width: 3px;
 }
@@ -333,7 +309,6 @@ ol {
   background-color: #d9d9d9;
 }
 
-/* 17. Курсор для интерактивных элементов */
 .search-form__label,
 .content__card-link,
 .button {
